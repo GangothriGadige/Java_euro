@@ -11,21 +11,15 @@ public class EuroTest {
     public void shouldCheckEqualityWhenTenEuroIsComparedWithTenEuro() {
         Euro firstEuro = new Euro(10);
         Euro secondEuro = new Euro(10);
-        boolean expectedValue = true;
 
-        boolean actualValue = firstEuro.checkEquality(secondEuro);
-
-        assertThat(actualValue, equalTo(expectedValue));
+        assertThat(firstEuro, equalTo(secondEuro));
     }
 
     @Test
     public void shouldCheckEqualityWhenTenEuroIsComparedWithTwentyEuro() {
         Euro firstEuro = new Euro(10);
-        Euro secondEuro = new Euro(10);
-        boolean expectedValue = true;
+        Euro secondEuro = new Euro(20);
 
-        boolean actualValue = firstEuro.checkEquality(secondEuro);
-
-        assertThat(actualValue, equalTo(expectedValue));
+        assertThat(firstEuro, not(equalTo(secondEuro)));
     }
 }
