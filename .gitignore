@@ -1,0 +1,9 @@
+.idea/
+.gradle/
+gradlew
+gradlew.bat
+settings.gradle
+build/
+img.png
+img_1.png
+
