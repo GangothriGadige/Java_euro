@@ -21,4 +21,8 @@ public class Euro {
     public int hashCode() {
         return Objects.hash(value);
     }
+
+    public  Euro plus(Euro euro) {
+        return new Euro(this.value + euro.value);
+    }
 }

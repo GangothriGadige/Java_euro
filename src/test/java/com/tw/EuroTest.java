@@ -22,4 +22,14 @@ public class EuroTest {
 
         assertThat(firstEuro, not(equalTo(secondEuro)));
     }
+
+    @Test
+    public void shouldReturnEuroSumWhenTwoEuroAreAdded() {
+        Euro fiveEuro = new Euro(5);
+        Euro twoEuro = new Euro(2);
+        Euro result = new Euro(7);
+
+        Euro actual = fiveEuro.plus(twoEuro);
+        assertThat(actual, equalTo(result));
+    }
 }
